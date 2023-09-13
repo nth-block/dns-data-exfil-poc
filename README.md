@@ -15,7 +15,7 @@ The attacker registers a domain name  - e.g. example[.]com for DNS queries to co
 The attacker side uses the Twisted module of Python to instantiate a DNS server. For the PoC, the server runs on the localhost on port 10053 (both TCP and UDP).
 
 1. Open a Terminal and navigate to the `attacker` directory.
-2. For the first time only, run `pip3 install`. The dependencies will get installed from the requirements.txt file.
+2. For the first time only, run `pip install -r requirements.txt`. The dependencies will get installed from the requirements.txt file.
 3. Run the DNS server - `python3 dns-server.py`
 4. **Do not run in background** as the server is configured to log to standard output. However, the POC is configured to extract the `servername` part of the DNS query and reconstruct it. This is the exfiltrated data chunk.
 

